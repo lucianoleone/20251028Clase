@@ -1,0 +1,1 @@
+cuales son los pasos para crear un proyecto en django desde cero
