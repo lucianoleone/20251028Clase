@@ -54,8 +54,9 @@ ROOT_URLCONF = 'Clase2810.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        #'DIRS': [r'D:\Curso Python\20251104\MiProyecto\templates'], #Aca podemos agregar rutas (carpetas) adicionales para buscar plantillas (templates) si es necesario
+        'DIRS': [BASE_DIR / 'templates'], #ponemos templates pero relativo a BASE_DIR
+        'APP_DIRS': True, #esto es para que busque las plantillas (templates) dentro de las carpetas de las apps
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
